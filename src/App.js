@@ -26,35 +26,41 @@ const data = {
   name: 'MaxiBib',
   children: [
     {
-      id: '2',
+      id: '1',
       name: 'Bibliotheque_Brigade_de_solidarité_populaire',
       children: [
         {
-          id: '6',
+          id: '11',
           name: 'brigade_affiche',
           link: brigade_affiche,
+          size: 194134
+        },
+        {
+          id: '12',
+          name: 'covide_comment_faire_face_aux_controles',
+          link: covide_comment_faire_face_aux_controles,
           size: 150397
         }
       ]
     },
     {
-      id: '3',
+      id: '2',
       name: 'Show',
       children: [
         {
-          id: '4',
+          id: '21',
           name: 'SHOW_01',
           link: SHOW_01,
           size: 24428450
         },
         {
-          id: '5',
+          id: '22',
           name: 'SHOW_02',
           link: SHOW_02,
           size: 6820042
         },
         {
-          id: '6',
+          id: '23',
           name: 'SHOW_03',
           link: SHOW_03,
           size: 17712114
@@ -77,7 +83,7 @@ function App() {
                 renderTree(node)
               ) : (
                   <a className="link" href={node.link}>
-                    {node.name}<span className='size'>{'size :'}</span> {node?.size} Bytes
+                    {node.name}<span>{'size :'} {node?.size} Bytes</span>
                   </a>
                 )
           )}

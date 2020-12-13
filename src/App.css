@@ -5,9 +5,9 @@
 .ui-tree {
   margin: 50px;
 }
-.size {
-  margin-left: 100px;
-}
-.MuiTreeView-root {
-  max-width: 600px;
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
 }
