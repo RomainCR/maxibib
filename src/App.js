@@ -86,7 +86,7 @@ function App() {
               !node.link ? (
                 renderTree(node)
               ) : (
-                  <a className="link" href={node.link}>
+                  <a className="link" href={node.link} download>
                     {node.name}<span>{'size :'} {node?.size} Bytes</span>
                   </a>
                 )
