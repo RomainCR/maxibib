@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import FolderIcon from '@material-ui/icons/Folder';
 import FolderOpenIcon from '@material-ui/icons/FolderOpen';
@@ -6,7 +5,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import TreeView from '@material-ui/lab/TreeView';
 import TreeItem from '@material-ui/lab/TreeItem';
 
-import Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement.pdf'
 import brigade_affiche from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/brigade_affiche.pdf'
 import covide_comment_faire_face_aux_controles from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/covide_comment_faire_face_aux_controles.pdf'
 import tout_le_monde_peut_se_passer_de_la_police from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/tout_le_monde_peut_se_passer_de_la_police.pdf'
@@ -40,6 +38,12 @@ const data = {
           name: 'covide_comment_faire_face_aux_controles',
           link: covide_comment_faire_face_aux_controles,
           size: 150397
+        },
+        {
+          id: '13',
+          name: 'tout_le_monde_peut_se_passer_de_la_police',
+          link: tout_le_monde_peut_se_passer_de_la_police,
+          size: 168880
         }
       ]
     },
