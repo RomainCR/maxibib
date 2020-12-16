@@ -9,5 +9,9 @@
 .link {
   display: flex;
   justify-content: space-between;
-  width: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
 }

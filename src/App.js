@@ -4,7 +4,7 @@ import FolderOpenIcon from '@material-ui/icons/FolderOpen';
 import { makeStyles } from '@material-ui/core/styles';
 import TreeView from '@material-ui/lab/TreeView';
 import TreeItem from '@material-ui/lab/TreeItem';
-
+import { NestedEditableDemo } from './NestedEditableDemo'
 import brigade_affiche from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/brigade_affiche.pdf'
 import covide_comment_faire_face_aux_controles from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/covide_comment_faire_face_aux_controles.pdf'
 import tout_le_monde_peut_se_passer_de_la_police from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/tout_le_monde_peut_se_passer_de_la_police.pdf'
@@ -16,7 +16,9 @@ const useStyles = makeStyles({
   root: {
     height: 110,
     flexGrow: 1,
-    maxWidth: 400
+    // maxWidth: 400
+    width: 700,
+    backgroundColor: 'none'
   }
 });
 const data = {
@@ -87,7 +89,7 @@ function App() {
                 renderTree(node)
               ) : (
                   <a className="link" href={node.link} download>
-                    {node.name}<span>{'size :'} {node?.size} Bytes</span>
+                    {node.name}<span>{node?.size} Bytes</span>
                   </a>
                 )
           )}
@@ -97,14 +99,17 @@ function App() {
   );
   return (
     <>
-      <h1>MaxiBib</h1>
-      <div class="ui-tree"><TreeView
+      <div class="header">
+        <h1>MaxiBib</h1>
+      </div>
+      <NestedEditableDemo />
+      {/* <div class="ui-tree"><TreeView
         className={classes.root}
         defaultCollapseIcon={<FolderIcon />}
         defaultExpanded={['root']}
         defaultExpandIcon={<FolderOpenIcon />}>
         {renderTree(data)}
-      </TreeView></div>
+      </TreeView></div> */}
     </>
   );
 }
