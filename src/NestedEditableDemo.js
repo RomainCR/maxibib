@@ -23,9 +23,7 @@ import L_usage_de_la_violence from './maxibib/Bibliotheque_Edition_burn_aout/l_u
 import SHOW_01 from './maxibib/Bibliotheque_Show/SHOW_01.pdf'
 import SHOW_02 from './maxibib/Bibliotheque_Show/SHOW_02.pdf'
 import SHOW_03 from './maxibib/Bibliotheque_Show/SHOW_03.pdf'
-import FileBrowser, { Icons } from 'react-keyed-file-browser'
-import FolderIcon from '@material-ui/icons/Folder';
-import FolderOpenIcon from '@material-ui/icons/FolderOpen';
+import FileBrowser from 'react-keyed-file-browser'
 import { faFolder, faFolderOpen, faFilePdf, faFile, faImage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export class NestedEditableDemo extends React.Component {
@@ -56,113 +54,11 @@ export class NestedEditableDemo extends React.Component {
     ],
   }
 
-  // handleCreateFolder = (key) => {
-  //   this.setState(state => {
-  //     state.files = state.files.concat([{
-  //       key: key,
-  //     }])
-  //     return state
-  //   })
-  // }
-  // handleCreateFiles = (files, prefix) => {
-  //   this.setState(state => {
-  //     const newFiles = files.map((file) => {
-  //       let newKey = prefix
-  //       if (prefix !== '' && prefix.substring(prefix.length - 1, prefix.length) !== '/') {
-  //         newKey += '/'
-  //       }
-  //       newKey += file.name
-  //       return {
-  //         key: newKey,
-  //         size: file.size,
-  //         // modified: +Moment(),
-  //       }
-  //     })
-
-  //     const uniqueNewFiles = []
-  //     newFiles.map((newFile) => {
-  //       let exists = false
-  //       state.files.map((existingFile) => {
-  //         if (existingFile.key === newFile.key) {
-  //           exists = true
-  //         }
-  //       })
-  //       if (!exists) {
-  //         uniqueNewFiles.push(newFile)
-  //       }
-  //     })
-  //     state.files = state.files.concat(uniqueNewFiles)
-  //     return state
-  //   })
-  // }
-
-  // handleRenameFolder = (oldKey, newKey) => {
-  //   this.setState(state => {
-  //     const newFiles = []
-  //     state.files.map((file) => {
-  //       if (file.key.substr(0, oldKey.length) === oldKey) {
-  //         newFiles.push({
-  //           ...file,
-  //           key: file.key.replace(oldKey, newKey),
-  //           // modified: +Moment(),
-  //         })
-  //       } else {
-  //         newFiles.push(file)
-  //       }
-  //     })
-  //     state.files = newFiles
-  //     return state
-  //   })
-  // }
-  // handleRenameFile = (oldKey, newKey) => {
-  //   this.setState(state => {
-  //     const newFiles = []
-  //     state.files.map((file) => {
-  //       if (file.key === oldKey) {
-  //         newFiles.push({
-  //           ...file,
-  //           key: newKey,
-  //           // modified: +Moment(),
-  //         })
-  //       } else {
-  //         newFiles.push(file)
-  //       }
-  //     })
-  //     state.files = newFiles
-  //     return state
-  //   })
-  // }
-  // handleDeleteFolder = (folderKey) => {
-  //   this.setState(state => {
-  //     const newFiles = []
-  //     state.files.map((file) => {
-  //       if (file.key.substr(0, folderKey.length) !== folderKey) {
-  //         newFiles.push(file)
-  //       }
-  //     })
-  //     state.files = newFiles
-  //     return state
-  //   })
-  // }
-  // handleDeleteFile = (fileKey) => {
-  //   this.setState(state => {
-  //     const newFiles = []
-  //     state.files.map((file) => {
-  //       if (file.key !== fileKey) {
-  //         newFiles.push(file)
-  //       }
-  //     })
-  //     state.files = newFiles
-  //     return state
-  //   })
-  // }
-
   render() {
     return (
       <>
         <FileBrowser
           files={this.state.files}
-          // icons={Icons.FontAwesome(4)}
           icons={{
             File: <FontAwesomeIcon icon={faFile} style={{ marginRight: '5px' }} />,
             Image: <FontAwesomeIcon icon={faImage} style={{ marginRight: '5px' }} />,
