@@ -23,9 +23,11 @@ import L_usage_de_la_violence from './maxibib/Bibliotheque_Edition_burn_aout/l_u
 import SHOW_01 from './maxibib/Bibliotheque_Show/SHOW_01.pdf'
 import SHOW_02 from './maxibib/Bibliotheque_Show/SHOW_02.pdf'
 import SHOW_03 from './maxibib/Bibliotheque_Show/SHOW_03.pdf'
-
 import FileBrowser, { Icons } from 'react-keyed-file-browser'
-
+import FolderIcon from '@material-ui/icons/Folder';
+import FolderOpenIcon from '@material-ui/icons/FolderOpen';
+import { faFolder, faFolderOpen, faFilePdf, faFile, faImage } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export class NestedEditableDemo extends React.Component {
   state = {
     files: [
@@ -157,19 +159,31 @@ export class NestedEditableDemo extends React.Component {
 
   render() {
     return (
-      <FileBrowser
-        files={this.state.files}
-        icons={Icons.FontAwesome(4)}
-      // canDownloadFile={true}
-      // onCreateFolder={this.handleCreateFolder}
-      // onCreateFiles={this.handleCreateFiles}
-      // onMoveFolder={this.handleRenameFolder}
-      // onMoveFile={this.handleRenameFile}
-      // onRenameFolder={this.handleRenameFolder}
-      // onRenameFile={this.handleRenameFile}
-      // onDeleteFolder={this.handleDeleteFolder}
-      // onDeleteFile={this.handleDeleteFile}
-      />
+      <>
+        <FileBrowser
+          files={this.state.files}
+          // icons={Icons.FontAwesome(4)}
+          icons={{
+            File: <FontAwesomeIcon icon={faFile} style={{ marginRight: '5px' }} />,
+            Image: <FontAwesomeIcon icon={faImage} style={{ marginRight: '5px' }} />,
+            PDF: <FontAwesomeIcon icon={faFilePdf} style={{ marginRight: '5px' }} />,
+            Rename: <i className="i-cursor" aria-hidden="true" />,
+            Folder: <FontAwesomeIcon icon={faFolder} style={{ marginRight: '5px' }} />,
+            FolderOpen: <FontAwesomeIcon icon={faFolderOpen} style={{ marginRight: '5px' }} />,
+            Delete: <i className="trash" aria-hidden="true" />,
+            Loading: <i className="circle-notch spin" aria-hidden="true" />,
+          }}
+        // canDownloadFile={true}
+        // onCreateFolder={this.handleCreateFolder}
+        // onCreateFiles={this.handleCreateFiles}
+        // onMoveFolder={this.handleRenameFolder}
+        // onMoveFile={this.handleRenameFile}
+        // onRenameFolder={this.handleRenameFolder}
+        // onRenameFile={this.handleRenameFile}
+        // onDeleteFolder={this.handleDeleteFolder}
+        // onDeleteFile={this.handleDeleteFile}
+        />
+      </>
     )
   }
 }
