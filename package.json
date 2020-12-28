@@ -11,7 +11,7 @@
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-keyed-file-browser": "^1.10.0",
+    "react-keyed-file-browser": "https://github.com/RomainCR/react-keyed-file-browser/tarball/master",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },

@@ -160,7 +160,7 @@ export class NestedEditableDemo extends React.Component {
       <FileBrowser
         files={this.state.files}
         icons={Icons.FontAwesome(4)}
-        canDownloadFile={true}
+      // canDownloadFile={true}
       // onCreateFolder={this.handleCreateFolder}
       // onCreateFiles={this.handleCreateFiles}
       // onMoveFolder={this.handleRenameFolder}
