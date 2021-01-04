@@ -1,0 +1,90 @@
+import React from 'react'
+
+import FileBrowser from 'react-keyed-file-browser'
+
+import { faFolder, faFolderOpen, faFilePdf, faFile, faImage } from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+
+ import Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement from './assets/Bibliotheque_Brigade_de_solidarité_populaire/Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement.pdf' 
+ import SHOW_03 from './assets/Bibliotheque_Brigade_de_solidarité_populaire/SHOW_03.pdf' 
+ import brigade_affiche from './assets/Bibliotheque_Brigade_de_solidarité_populaire/brigade_affiche.pdf' 
+ import covide_comment_faire_face_aux_controles from './assets/Bibliotheque_Brigade_de_solidarité_populaire/covide_comment_faire_face_aux_controles.pdf' 
+ import tout_le_monde_peut_se_passer_de_la_police from './assets/Bibliotheque_Brigade_de_solidarité_populaire/tout_le_monde_peut_se_passer_de_la_police.pdf' 
+ import cjsp_1_an_01 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_01.pdf' 
+ import cjsp_1_an_02 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_02.pdf' 
+ import cjsp_1_an_03 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_03.pdf' 
+ import cjsp_1_an_04 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_04.pdf' 
+ import cjsp_1_an_05 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_05.pdf' 
+ import cjsp_1_an_06 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_06.pdf' 
+ import cjsp_1_an_07 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_07.pdf' 
+ import cjsp_1_an_08 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_08.pdf' 
+ import cjsp_1_an_09 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_09.pdf' 
+ import cjsp_1_an_10 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_10.pdf' 
+ import cjsp_1_an_11 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_11.pdf' 
+ import cjsp_1_an_12 from './assets/Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_12.pdf' 
+ import demonter_un_monument from './assets/Bibliotheque_Edition_burn_aout/comment_demonter_un_monument/demonter_un_monument.pdf' 
+ import De_la_misere_en_milieu_étudiant from './assets/Bibliotheque_Edition_burn_aout/de_la_misere_en_milieu_etudiant/De_la_misere_en_milieu_étudiant.pdf' 
+ import L_usage_de_la_violence from './assets/Bibliotheque_Edition_burn_aout/l_usage_de_la_violence/L_usage_de_la_violence.pdf' 
+ import SHOW_01 from './assets/Bibliotheque_Show/SHOW_01.pdf' 
+ import SHOW_02 from './assets/Bibliotheque_Show/SHOW_02.pdf' 
+
+
+
+
+export class NestedEditableDemo extends React.Component {
+state = {
+  files: [{key: 'Bibliotheque_Brigade_de_solidarité_populaire/Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement.pdf', size: 150397, url: Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement} 
+,{key: 'Bibliotheque_Brigade_de_solidarité_populaire/SHOW_03.pdf', size: 17712114, url: SHOW_03} 
+,{key: 'Bibliotheque_Brigade_de_solidarité_populaire/brigade_affiche.pdf', size: 194134, url: brigade_affiche} 
+,{key: 'Bibliotheque_Brigade_de_solidarité_populaire/covide_comment_faire_face_aux_controles.pdf', size: 74205, url: covide_comment_faire_face_aux_controles} 
+,{key: 'Bibliotheque_Brigade_de_solidarité_populaire/tout_le_monde_peut_se_passer_de_la_police.pdf', size: 168880, url: tout_le_monde_peut_se_passer_de_la_police} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_01.pdf', size: 3344760, url: cjsp_1_an_01} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_02 (Conflicted copy from Thomas on 2020-11-27).pdf', size: 386264, url: cjsp_1_an_02 (Conflicted copy from Thomas on 2020-11-27)} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_02.pdf', size: 386276, url: cjsp_1_an_02} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_03.pdf', size: 1057711, url: cjsp_1_an_03} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_04.pdf', size: 4976342, url: cjsp_1_an_04} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_05.pdf', size: 117223, url: cjsp_1_an_05} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_06.pdf', size: 574204, url: cjsp_1_an_06} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_07.pdf', size: 5893599, url: cjsp_1_an_07} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_08.pdf', size: 810631, url: cjsp_1_an_08} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_09.pdf', size: 10013538, url: cjsp_1_an_09} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_10.pdf', size: 759865, url: cjsp_1_an_10} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_11.pdf', size: 125311, url: cjsp_1_an_11} 
+,{key: 'Bibliotheque_Edition_burn_aout/chaque_jour_sa_peine/pdf/cjsp_1_an/cjsp_1_an_12.pdf', size: 119391, url: cjsp_1_an_12} 
+,{key: 'Bibliotheque_Edition_burn_aout/comment_demonter_un_monument/demonter_un_monument.pdf', size: 852885, url: demonter_un_monument} 
+,{key: 'Bibliotheque_Edition_burn_aout/de_la_misere_en_milieu_etudiant/De_la_misere_en_milieu_étudiant.pdf', size: 222991, url: De_la_misere_en_milieu_étudiant} 
+,{key: 'Bibliotheque_Edition_burn_aout/de_la_misere_en_milieu_etudiant/couv-de-la-misere.pdf', size: 38039, url: couv-de-la-misere} 
+,{key: 'Bibliotheque_Edition_burn_aout/de_la_misere_en_milieu_etudiant/pdf-www/De_la_misere_en_milieu_étudiant.pdf', size: 222991, url: De_la_misere_en_milieu_étudiant} 
+,{key: 'Bibliotheque_Edition_burn_aout/de_la_misere_en_milieu_etudiant/pdf-www/couv-de-la-misere.pdf', size: 38039, url: couv-de-la-misere} 
+,{key: 'Bibliotheque_Edition_burn_aout/l_usage_de_la_violence/COUV_l_usage_de_la_violence (1).pdf', size: 49553, url: COUV_l_usage_de_la_violence (1)} 
+,{key: 'Bibliotheque_Edition_burn_aout/l_usage_de_la_violence/L_usage_de_la_violence.pdf', size: 1250659, url: L_usage_de_la_violence} 
+,{key: 'Bibliotheque_Edition_burn_aout/l_usage_de_la_violence/avant-propos/COUV-avant-propos.pdf', size: 29411, url: COUV-avant-propos} 
+,{key: 'Bibliotheque_Edition_burn_aout/l_usage_de_la_violence/avant-propos/avant-propos.pdf', size: 63383, url: avant-propos} 
+,{key: 'Bibliotheque_Show/SHOW_01.pdf', size: 24428450, url: SHOW_01} 
+,{key: 'Bibliotheque_Show/SHOW_02.pdf', size: 6820042, url: SHOW_02} 
+
+]
+}
+
+render() {
+  return (
+    <>
+      <FileBrowser
+        files={this.state.files}
+        icons={{
+          File: <FontAwesomeIcon icon={faFile} style={{ marginRight: '5px' }} />,
+          Image: <FontAwesomeIcon icon={faImage} style={{ marginRight: '5px' }} />,
+          PDF: <FontAwesomeIcon icon={faFilePdf} style={{ marginRight: '5px' }} />,
+          Rename: <i className="i-cursor" aria-hidden="true" />,
+          Folder: <FontAwesomeIcon icon={faFolder} style={{ marginRight: '5px' }} />,
+          FolderOpen: <FontAwesomeIcon icon={faFolderOpen} style={{ marginRight: '5px' }} />,
+          Delete: <i className="trash" aria-hidden="true" />,
+          Loading: <i className="circle-notch spin" aria-hidden="true" />,
+        }}
+      />
+    </>
+  )
+}
+}

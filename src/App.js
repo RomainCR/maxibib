@@ -1,6 +1,7 @@
 import './App.css';
 
-import { NestedEditableDemo } from './NestedEditableDemo'
+// import { NestedEditableDemo } from './NestedEditableDemo'
+import { Test } from './Test'
 
 function App() {
 
@@ -9,7 +10,8 @@ function App() {
       <div class="header">
         <h1>MaxiBib</h1>
       </div>
-      <NestedEditableDemo />
+      <Test />
+      {/* <NestedEditableDemo /> */}
     </>
   );
 }

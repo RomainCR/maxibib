@@ -1,6 +1,8 @@
 import React from 'react'
-// import ReactDOM from 'react-dom'
-// import Moment from 'moment'
+import FileBrowser from 'react-keyed-file-browser'
+import { faFolder, faFolderOpen, faFilePdf, faFile, faImage } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/Modele_de_lettre_de_contestation_des_PV_reçus_pour_deplacement_non_justifie_pendant_le_confinement.pdf'
 import brigade_affiche from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/brigade_affiche.pdf'
 import covide_comment_faire_face_aux_controles from './maxibib/Bibliotheque_Brigade_de_solidarité_populaire/covide_comment_faire_face_aux_controles.pdf'
@@ -23,9 +25,7 @@ import L_usage_de_la_violence from './maxibib/Bibliotheque_Edition_burn_aout/l_u
 import SHOW_01 from './maxibib/Bibliotheque_Show/SHOW_01.pdf'
 import SHOW_02 from './maxibib/Bibliotheque_Show/SHOW_02.pdf'
 import SHOW_03 from './maxibib/Bibliotheque_Show/SHOW_03.pdf'
-import FileBrowser from 'react-keyed-file-browser'
-import { faFolder, faFolderOpen, faFilePdf, faFile, faImage } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export class NestedEditableDemo extends React.Component {
   state = {
     files: [
