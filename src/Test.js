@@ -115,7 +115,6 @@ import le_verbe_83 from './maxibib/Bibliotheque_Table_de_presse/decembre/le_verb
 import le_verbe_84 from './maxibib/Bibliotheque_Table_de_presse/decembre/le_verbe_84.jpeg'
 import le_verbe_9 from './maxibib/Bibliotheque_Table_de_presse/decembre/le_verbe_9.jpeg'
 import le_verbe__1 from './maxibib/Bibliotheque_Table_de_presse/decembre/le_verbe__1.jpeg'
-import t_en_greve from './maxibib/Bibliotheque_Table_de_presse/decembre/t_en_greve.jpg'
 import A_PROPOS_DU_neuf3_4_ET_DE_LA_FORÊT_DES_PAPYRUS_tabledepresse from './maxibib/Bibliotheque_Table_de_presse/novembre/A_PROPOS_DU_neuf3_4_ET_DE_LA_FORÊT_DES_PAPYRUS_tabledepresse.com_.pdf'
 import BÂTIR_tabledepresse from './maxibib/Bibliotheque_Table_de_presse/novembre/BÂTIR_tabledepresse.com_.pdf'
 import CAMPING_tabledepresse from './maxibib/Bibliotheque_Table_de_presse/novembre/CAMPING_tabledepresse.com_.pdf'
