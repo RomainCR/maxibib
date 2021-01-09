@@ -2,15 +2,22 @@ import './App.css';
 
 // import { NestedEditableDemo } from './NestedEditableDemo'
 import { Test } from './Test'
+import { Description } from './Description'
+import { News } from './News'
 
 function App() {
 
   return (
     <>
-      <div class="header">
+      <div className="header">
         <h1>MaxiBib</h1>
       </div>
-      <Test />
+
+      <div className="global">
+        <Description />
+        <Test />
+        <News />
+      </div>
       {/* <NestedEditableDemo /> */}
     </>
   );

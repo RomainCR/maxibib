@@ -15,3 +15,22 @@
   display: flex;
   justify-content: center;
 }
+
+.global {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description {
+  padding: 0 30px;
+  max-width: 20%;
+}
+.news {
+  padding: 0 30px;
+  max-width: 20%;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
